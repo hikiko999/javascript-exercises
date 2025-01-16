@@ -1,5 +1,10 @@
-const leapYears = function() {
-
+const leapYears = function(targetYear) {
+    if ((targetYear % 4 == 0) 
+        && (!(targetYear % 100 == 0)||(targetYear % 400 == 0))){
+        return true;
+    } else {
+        return false;
+    }
 };
 
 // Do not edit below this line
